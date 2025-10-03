@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  myapp:
+    build: .
+    container_name: myapp_container
+    environment: 
+      - APP_NAME=Mi Aplicacion Docker
+      - USERNAME=Daniela Portillo
+    volumes: 
+      - ./data:/data
+    ports:
+      - "5000:5000"
